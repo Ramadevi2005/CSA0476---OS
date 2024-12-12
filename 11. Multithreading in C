@@ -15,11 +15,3 @@ int main() {
     pthread_join(thread2, NULL);
     return 0;
 }
-# OUTPUT:
-/rbin/ld: /tmp/ccHRECLK.o: in function `main':
-main.c:(.text+0x50): undefined reference to `pthread_create'
-/rbin/ld: main.c:(.text+0x6d): undefined reference to `pthread_create'
-/rbin/ld: main.c:(.text+0x7e): undefined reference to `pthread_join'
-/rbin/ld: main.c:(.text+0x8f): undefined reference to `pthread_join'
-ERROR!
-collect2: error: ld returned 1 exit status
